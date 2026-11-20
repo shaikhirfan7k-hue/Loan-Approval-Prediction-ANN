@@ -150,3 +150,15 @@ The Artificial Neural Network was evaluated on 123 test applications.
 The Flask application successfully generated an **APPROVED** prediction for a sample applicant, with a model output score of **74.83%**.
 
 **Note:** This is an educational prediction model, not an actual lending decision.
+
+## Application Screenshots
+
+### Application Screenshot 1
+![Application Screenshot 1](Screenshot%202026-11-21%20030808.png)
+
+### Application Screenshot 2
+![Application Screenshot 2](Screenshot%202026-11-21%20030822.png)
+
+### Application Screenshot 3
+![Application Screenshot 3](Screenshot%202026-11-21%20030846.png)
+
