@@ -122,3 +122,31 @@ This project is developed for educational purposes only. Predictions generated b
 **Irfan Shaikh**
 
 MSc Information Technology | AI & Machine Learning Projects
+## Model Performance
+
+The Artificial Neural Network was evaluated on 123 test applications.
+
+- **Test Accuracy:** 86.18%
+- **Correct Predictions:** 106
+- **Incorrect Predictions:** 17
+
+### Confusion Matrix
+
+| Actual / Predicted | Not Approved | Approved |
+|---|---:|---:|
+| Not Approved | 22 | 16 |
+| Approved | 1 | 84 |
+
+## Training Results
+
+### Training and Validation Accuracy
+![ANN Accuracy Graph](accuracy_graph.png)
+
+### Training and Validation Loss
+![ANN Loss Graph](loss_graph.png)
+
+## Prediction Example
+
+The Flask application successfully generated an **APPROVED** prediction for a sample applicant, with a model output score of **74.83%**.
+
+**Note:** This is an educational prediction model, not an actual lending decision.
