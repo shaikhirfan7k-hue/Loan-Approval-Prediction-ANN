@@ -162,3 +162,30 @@ The Flask application successfully generated an **APPROVED** prediction for a sa
 ### Application Screenshot 3
 ![Application Screenshot 3](Screenshot%202026-11-21%20030846.png)
 
+## Dataset
+
+This project uses the Loan Prediction Problem dataset.
+
+Dataset: https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset
+
+To retrain the model:
+1. Download and extract the dataset.
+2. Rename the training CSV to `loan_data.csv`.
+3. Place it in the main project directory.
+4. Install the dependencies using `pip install -r requirements.txt`.
+5. Run `python train_model.py`.
+
+## Running the Flask Application
+
+The repository includes the trained ANN model and preprocessing pipeline.
+
+After installing the dependencies, run:
+
+```bash
+python app.py
+```
+
+Open http://127.0.0.1:5000 in your browser.
+
+**Note:** This is an educational prediction system and should not be used for actual lending decisions.
+
