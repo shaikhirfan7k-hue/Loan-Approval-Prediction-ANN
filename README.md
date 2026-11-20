@@ -153,10 +153,10 @@ The Flask application successfully generated an **APPROVED** prediction for a sa
 
 ## Application Screenshots
 
-### Application Screenshot 1
+### Loan Approval Prediction Result
 ![Application Screenshot 1](Screenshot%202026-11-21%20030808.png)
 
-### Application Screenshot 2
+### Applicant Details Form
 ![Application Screenshot 2](Screenshot%202026-11-21%20030822.png)
 
 ### Application Screenshot 3
