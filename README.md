@@ -1,53 +1,124 @@
-# Loan Approval Prediction Using ANN
+# Loan Approval Prediction Using Artificial Neural Network (ANN)
 
-A Python web application that trains an Artificial Neural Network (ANN) on loan applicant data and provides a simple Flask interface to predict whether an application is likely to be approved.
+## Project Overview
+This project predicts whether a loan application is likely to be approved or rejected using an Artificial Neural Network (ANN). It uses applicant information such as income, loan amount, credit history, education, and property area to generate a prediction.
 
-## Features
-- Dataset preprocessing (missing-value imputation, categorical encoding and numeric scaling)
-- ANN with two hidden layers (16 and 8 neurons) and sigmoid output
-- Test accuracy, confusion matrix and classification report
-- Training/validation accuracy and loss graphs
-- Flask form for predicting a new applicant
+The project is developed using Python and Machine Learning techniques, with a web interface built using Flask.
 
-## Dataset
-Place the loan prediction CSV dataset in this project directory and name it **`loan_data.csv`**. It should contain the columns `Gender`, `Married`, `Dependents`, `Education`, `Self_Employed`, `ApplicantIncome`, `CoapplicantIncome`, `LoanAmount`, `Loan_Amount_Term`, `Credit_History`, `Property_Area`, and `Loan_Status` (Y/N). This project package does not include the dataset file.
+## Abstract
+Loan approval is an important process in the banking and financial industry. Evaluating loan applications manually can be time-consuming and may involve complex decision-making. This project uses an Artificial Neural Network (ANN) to analyze applicant information and predict loan approval status. The system includes data preprocessing, model training, and a user interface through which users can enter applicant details and obtain a prediction.
 
+## Objectives
+- Predict loan approval status using Artificial Neural Networks.
+- Analyze important applicant information.
+- Apply machine learning techniques to a financial problem.
+- Provide a simple interface for making predictions.
+- Understand the model's training and evaluation process.
 
-## Setup
-Use Python 3.10 or 3.11 recommended. In a terminal opened inside the project folder:
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- TensorFlow / Keras
+- Flask
+- HTML
+- Matplotlib
 
+## Project Features
+- Data preprocessing and cleaning
+- Missing value handling
+- Categorical data encoding
+- ANN model training
+- Model evaluation
+- Training accuracy and loss graphs
+- Web-based applicant input form
+- Loan approval prediction results
 
+## ANN Model
+The project uses an Artificial Neural Network to learn patterns from historical loan application data.
+
+The input features include applicant details such as:
+- Gender
+- Marital status
+- Dependents
+- Education
+- Self-employment status
+- Applicant income
+- Co-applicant income
+- Loan amount
+- Loan term
+- Credit history
+- Property area
+
+The trained ANN model processes these features and generates a loan approval prediction.
+
+## Methodology
+1. Dataset loading
+2. Data cleaning and preprocessing
+3. Handling missing values
+4. Encoding categorical features
+5. Splitting the dataset into training and testing data
+6. Building the Artificial Neural Network
+7. Training the model
+8. Evaluating model performance
+9. Visualizing training accuracy and loss
+10. Predicting loan approval for new applicants
+
+## Application
+The project includes a Flask-based web interface where users can enter applicant details and receive a loan approval prediction.
+
+## Project Structure
+```text
+Loan-Approval-Prediction-ANN/
+│
+├── app.py
+├── train_model.py
+├── requirements.txt
+├── templates/
+│   ├── index.html
+│   ├── predict.html
+│   └── result.html
+│
+└── README.md
+```
+
+## How to Run the Project
+
+### 1. Clone the repository
 ```bash
-python -m venv .venv
+git clone https://github.com/shaikhirfan7k-hue/Loan-Approval-Prediction-ANN.git
 ```
 
-Activate on Windows PowerShell:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
+### 2. Navigate to the project folder
+```bash
+cd Loan-Approval-Prediction-ANN
 ```
 
-Install dependencies:
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## Train the ANN
+### 4. Add the dataset
+Place the required dataset file in the project directory.
+
+### 5. Train the model
 ```bash
 python train_model.py
 ```
-This creates `loan_ann_model.keras`, `loan_preprocessor.pkl`, `accuracy_graph.png`, and `loss_graph.png`.
 
-## Run the Flask application
-After training finishes:
+### 6. Run the web application
 ```bash
 python app.py
 ```
-Open the local URL printed in the terminal (usually `http://127.0.0.1:5000`).
 
-## Project files
-- `train_model.py` – preprocessing, ANN training, metrics and graphs
-- `app.py` – Flask application and prediction endpoint
-- `templates/` – HTML pages for home, applicant form and prediction result
-- `requirements.txt` – Python dependencies
-- `loan_data.csv` – dataset file to add locally (not included in this package)
+Open the local URL shown in your terminal to use the application.
+
+## Disclaimer
+This project is developed for educational purposes only. Predictions generated by the model should not be considered actual financial advice or real banking decisions.
+
+## Author
+**Irfan Shaikh**
+
+MSc Information Technology | AI & Machine Learning Projects
